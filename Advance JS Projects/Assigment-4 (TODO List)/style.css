@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background: rgb(2, 0, 36);
+    background: linear-gradient(204deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 600px;
+    height: 90vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* margin-left: 650px; */
+    text-align: center;
+    background: rgb(43, 5, 62);
+    background: linear-gradient(42deg, rgba(43, 5, 62, 1) 0%, rgba(39, 7, 101, 1) 100%);
+    color: white;
+    border-radius: 50px;
+    /* box-shadow: 14px 11px 7px 5px rgba(0, 0, 0, 0.1); */
+    filter: drop-shadow(32px 30px 25px #000000);
+    display: flex;
+    justify-content: center;
+}
+
+#input {
+    height: 50px;
+    width: 400px;
+    background: none;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px !important;
+    padding-right: 73px;
+}
+
+ul {
+    margin-top: 10px;
+    margin-left: 150px;
+    list-style-type: none;
+    box-shadow: 7px 17px 0px 7px rgba(0, 0, 0, 0.1);
+    color: white;
+
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(1px);
+    font-size: 30px;
+}
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    margin-left: -160px;
+    font-family: Anta;
+}
+.todo {
+    font-family: agbalumo;
+    border-width: 100px;
+}
+
+.fa-solid {
+    font-size: 24px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+#add {
+    margin-left: -73px;
+    margin-top: -10px !important;
+    height: 45px;
+    width: 65px;
+    background-color: rgb(21, 165, 21);
+    border-radius: 0 50px 50px 0;
+    /* color: green; */
+}
+
+#delAll {
+    background-color: rgb(192, 29, 29);
+    height: 45px;
+    width: 95px;
+    margin-top: -8px !important;
+}
+
+.fa-solid:hover {
+    color: cyan !important;
+    border: 1px solid cyan !important;
+    padding: 7px;
+}
+
+.fa-trash:hover {
+    color: red !important;
+    border: 1px solid red !important;
+    padding: 7px;
+}
+
+@media (max-width: 576px) {
+
+    #input {
+        width: auto;
+    }
+
+    ul {
+        width: auto;
+        float: left;
+    }
+
+}
